@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Juego</title>
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/52/ab/8c/52ab8ce239e052e34ba24d4d72a20947.png"/>
+    <link rel="stylesheet" href="estilos/jugadores.css" type="text/css">
+    <script src="scripts/jugadores.js"></script>
+  </head>
+  <body>
+    <br><br>
+    <table align="center">
+      <tr>
+        <td bgcolor="grey" width="400px"  height="50px" align="center"><font colspan="2" align="center"><font size="4" color="black" face="ALGERIAN"><label id="TurnoJugador">Turno y Resultado</font></label></td>
+      </tr>
+    </table><br><br>
+
+    <section id="SeccionPrincipal">
+        <article id="Comandos">
+          <br>
+          <p><font size="6" color="black" face="ALGERIAN">Jugador 1º:</font></p>
+          <input type="text" id="jugador1">
+          <br>
+          <p><font size="6" color="black" face="ALGERIAN">Jugador 2º:</font></p>
+          <input type="text" id="jugador2"><br>
+          <a href="#" class="button" id="iniciar">Inicio</a><br>
+        </article>
+      <article id="Tablero">
+        <!-- Primera Fila del tablero -->
+        <input type="button" id="boton0" onclick="colocar(this)"><!-- this indica que sobre el boton se ejecutara la funcion colocar -->
+        <input type="button" id="boton1" onclick="colocar(this)">
+        <input type="button" id="boton2" onclick="colocar(this)"><br>
+        <!-- Segunda fila del tablero -->
+        <input type="button" id="boton3" onclick="colocar(this)">
+        <input type="button" id="boton4" onclick="colocar(this)">
+        <input type="button" id="boton5" onclick="colocar(this)"><br>
+        <!-- Tercera fila del tablero -->
+        <input type="button" id="boton6" onclick="colocar(this)">
+        <input type="button" id="boton7" onclick="colocar(this)">
+        <input type="button" id="boton8" onclick="colocar(this)">
+      </article>
+  </section>
+  <table align="center">
+    <td><p align="center"><a href="Bienvenida.html" class="button" id="iniciar">Atrás</a></p></td>
+    <td><p align="center"><a href="#" class="button"  onclick="reiniciar()">Reiniciar</a></td>
+    <td><p align="center"><a href="#" class="button"  onclick="final()">Finalizar</a></td>
+  </table>
+
+     <table align="center" border="1">
+       <tr>
+         <td colspan="2" bgcolor="#949AAA"><font size="3" color="black" face="ALGERIAN">Tabla de puntuación</font></td>
+       </tr>
+       <tr>
+         <td align="center" bgcolor="#38A244"><font size="3" color="black" face="ALGERIAN">Jugador 1º</font></td>
+         <td align="center" bgcolor="#AE2C25"><font size="3" color="black" face="ALGERIAN">Jugador 2º</font></td>
+       </tr>
+       <tr>
+         <td id="puntaje1" align="center" bgcolor="#AE2C25"><font size="3" color="black" face="ALGERIAN">0</font></td>
+         <td id="puntaje2" align="center" bgcolor="#38A244"><font size="3" color="black" face="ALGERIAN">0</font></td>
+       </tr>
+     </table>
+<embed src="no se cual poner" width="50" height="50">
+  </body>
+</html>
