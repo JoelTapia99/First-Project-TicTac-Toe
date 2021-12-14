@@ -1,4 +1,4 @@
-# Primer proyecto de programación.
+# Mi primer proyecto de programación.
 
 Este es el primer proyecto formal donde se aplico conceptos de HTML5, CSS y JS.
 
